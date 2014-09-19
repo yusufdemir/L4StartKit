@@ -54,9 +54,9 @@ return array(
 /*************************************
 	VALIDATIONS
 **************************************/
-	'rules' => array(
+	/*'rules' => array(
 	    'title' 	=> 'required',
 	    'category' 	=> 'required',
 	    'content'	=> 'required',
-	)
+	)*/
 );

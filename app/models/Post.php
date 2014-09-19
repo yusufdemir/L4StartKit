@@ -26,4 +26,12 @@ class Post extends Eloquent {
     	$this->attributes['slug'] = Str::slug($title.$date);
 	}
 
+
+   public static $rules = array(
+	    'title' 	=> 'required',
+	    'category' 	=> 'required',
+	    'content'	=> 'required',
+    );
+
+
 }
