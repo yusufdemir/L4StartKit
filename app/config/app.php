@@ -123,7 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'Spescina\Timthumb\TimthumbServiceProvider',
-		'Frozennode\Administrator\AdministratorServiceProvider',
+		//'Frozennode\Administrator\AdministratorServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
