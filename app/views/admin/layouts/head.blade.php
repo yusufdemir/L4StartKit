@@ -18,22 +18,8 @@
 <link rel="stylesheet" href="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
 <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css">
 <!-- end: MAIN CSS -->
-<!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
-<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
-<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.transitions.css">
-<link rel="stylesheet" href="assets/plugins/summernote/dist/summernote.css">
-<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
-<link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-select/bootstrap-select.min.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
-<link rel="stylesheet" href="assets/plugins/DataTables/media/css/DT_bootstrap.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
-<!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
 <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
-<link rel="stylesheet" href="assets/plugins/weather-icons/css/weather-icons.min.css">
-<link rel="stylesheet" href="assets/plugins/nvd3/nv.d3.min.css">
+	@yield('header-code')
 <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CORE CSS -->
 <link rel="stylesheet" href="assets/css/styles.css">
@@ -45,3 +31,5 @@
 <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <!-- end: HEAD -->
+<body>
+	<div class="main-wrapper">

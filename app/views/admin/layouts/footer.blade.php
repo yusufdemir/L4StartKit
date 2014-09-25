@@ -10,3 +10,6 @@
 	</div>
 </footer>
 <!-- end: FOOTER -->
+</div>
+<!-- end: MAIN WRAPPER -->
+</body>
