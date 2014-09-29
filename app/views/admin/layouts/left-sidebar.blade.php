@@ -11,7 +11,7 @@
 			</div>
 			<div class="user-profile border-top padding-horizontal-10 block">
 				<div class="inline-block">
-					<img src="assets/images/avatar-1.jpg" alt="">
+					<img src="/assets/images/avatar-1.jpg" alt="">
 				</div>
 				<div class="inline-block">
 					<h5 class="no-margin"> Hoşgeldin </h5>
@@ -35,13 +35,13 @@
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="layouts_sidebar_closed.html">
+							<a href="{{ URL::to('admin/post') }}">
 								<span class="title"> All Posts </span>
 								<span class="label label-default pull-right ">Tüm Yazılar</span>
 							</a>
 						</li>
 						<li>
-							<a href="layouts_sidebar_not_fixed.html">
+							<a href="{{ URL::to('admin/post/create') }}">
 								<span class="title"> Add Post </span>
 								<span class="label label-default pull-right ">Yazı Ekle</span>
 							</a>
@@ -61,7 +61,7 @@
 		</div>
 		<div class="col-xs-6 text-right no-padding">
 			<a class="btn btn-sm log-out text-right" href="login_login.html">
-				<i class="fa fa-power-off"></i> Log Out
+				<i class="fa fa-power-off"></i> Çıkış Yap
 			</a>
 		</div>
 	</div>

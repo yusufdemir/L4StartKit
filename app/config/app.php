@@ -125,6 +125,7 @@ return array(
 		'Spescina\Timthumb\TimthumbServiceProvider',
 		//'Frozennode\Administrator\AdministratorServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
+		'Former\FormerServiceProvider',
 
 	),
 
@@ -194,6 +195,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Timthumb' 		  => 'Spescina\Timthumb\Facades\Timthumb',
 		'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'Former' 		  => 'Former\Facades\Former',
 
 	),
 

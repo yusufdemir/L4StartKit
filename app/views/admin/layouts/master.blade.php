@@ -1,7 +1,7 @@
 @include('admin.layouts.head')
 @include('admin.layouts.header')
 @include('admin.layouts.left-sidebar')
-@include('admin.layouts.content')
+@include('admin.layouts.main')
 @include('admin.layouts.footer')
 @include('admin.layouts.end-page')
 

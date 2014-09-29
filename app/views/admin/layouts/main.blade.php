@@ -94,6 +94,21 @@
             </div>            
          ')
          <!-- end: BREADCRUMB -->
+
+        @if (Session::has('message'))
+          <div class="col-md-12">
+            @if (Session::get('message.type')=='error') 
+               <div class="alert alert-danger">
+            @else
+               <div class="alert alert-success">
+            @endif
+            <button data-dismiss="alert" class="close">×</button>
+            <strong>Bildirim: </strong>
+              {{ Session::get('message.text') }}
+            </div>
+          </div>
+        @endif
+
          <!-- start: PAGE CONTENT -->
          @yield('content')
          <!-- end: PAGE CONTENT-->

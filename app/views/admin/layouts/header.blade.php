@@ -8,7 +8,7 @@
 			</a>
 			<!-- start: LOGO -->
 			<a class="navbar-brand" href="index.html">
-				<img src="assets/images/logo.png" alt="Rapido"/>
+				<img src="/assets/images/logo.png" alt="Rapido"/>
 			</a>
 			<!-- end: LOGO -->
 		</div>
@@ -18,7 +18,7 @@
 				<!-- start: USER DROPDOWN -->
 				<li class="dropdown current-user">
 					<a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
-						<img src="assets/images/avatar-1-small.jpg" class="img-circle" alt=""> <span class="username hidden-xs">Yusuf Demir</span> <i class="fa fa-caret-down "></i>
+						<img src="/assets/images/avatar-1-small.jpg" class="img-circle" alt=""> <span class="username hidden-xs">Yusuf Demir</span> <i class="fa fa-caret-down "></i>
 					</a>
 					<ul class="dropdown-menu dropdown-dark">
 						<li>
