@@ -74,24 +74,7 @@ class PostController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$edit_form =	Former::open('/admin/post/'.$id)->method('PUT')->rules(array(
-						  'title'		=> 'required',
-						  'content' 	=> 'required',
-						  'status'		=> 'required',
-						));
-		$edit_form.=	Former::populate(Post::find($id));
-		$edit_form.=	Former::text('title','Başlık')->state('error')->style('width:100%;');
-		$edit_form.=	Former::textarea('content','İçerik')->class('ckeditor');
-		$edit_form.=	Former::select('status','Yayın Durumu')->options(array(
-						    'publish'  	=> 'Yayında',
-						    'draft'  	=> 'Taslak',
-						));
-		$edit_form.=	Former::text('tagsasags','Etiketler')->class('tags')->value('test');
-		$edit_form.=	'<br>';
-		$edit_form.=	Former::actions()->large_primary_submit('Güncelle');
-	    $edit_form.=	Former::close();
-
-		return View::make('admin.posts.post-edit',compact('edit_form'));
+		return View::make('admin.posts.post-edit',compact('id'));
 	}
 
 	/**

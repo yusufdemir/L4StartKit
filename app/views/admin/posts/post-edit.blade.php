@@ -39,11 +39,23 @@
 
    @section('footer-code')
    
+		<script src="/assets/plugins/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+		<script src="/assets/plugins/autosize/jquery.autosize.min.js"></script>
+		<script src="/assets/plugins/select2/select2.min.js"></script>
+		<script src="/assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+		<script src="/assets/plugins/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+		<script src="/assets/plugins/jquery-maskmoney/jquery.maskMoney.js"></script>
+		<script src="/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="/assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+		<script src="/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+		<script src="/assets/plugins/bootstrap-colorpicker/js/commits.js"></script>
+		<script src="/assets/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
+		<script src="/assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+		<script src="/assets/plugins/jQuery-Tags-Input/jquery.tagsinput.js"></script>
+		<script src="/assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 		<script src="/assets/plugins/ckeditor/ckeditor.js"></script>
 		<script src="/assets/plugins/ckeditor/adapters/jquery.js"></script>
-		<script src="/assets/plugins/jQuery-Tags-Input/jquery.tagsinput.js"></script>
-
-
+		<script src="/assets/js/form-elements.js"></script>
    @stop
 
 	@section('content')
@@ -53,7 +65,15 @@
                   <div class="panel-body">
 
 
-					{{ $edit_form }}
+					{{ Former::open('/admin/post/'.Input::get('id'))->method('PUT')->rules(array(
+									  'title'		=> 'required',
+									  'content' 	=> 'required',
+									  'status'		=> 'required',
+									)); }}
+					{{ Former::populate(Post::find($id)); }}
+						@include('admin.posts.post-form')
+					{{ Former::actions()->large_primary_submit('Güncelle'); }}
+				    {{ Former::close(); }}
 
 
                   </div>
