@@ -8,7 +8,8 @@
 		"way/generators": "2.*",
 		"spescina/timthumb": "1.0.*",
 		"cartalyst/sentry": "2.1.*",
-		"anahkiasen/former": "dev-master"
+		"anahkiasen/former": "dev-master",
+		"pingpong/menus": "1.0.*" 
 	},
 	"autoload": {
 		"classmap": [

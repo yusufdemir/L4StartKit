@@ -22,33 +22,8 @@
 				</div>
 			</div>
 			<!-- start: MAIN NAVIGATION MENU -->
-			<ul class="main-navigation-menu">
-				<li class="active open">
-					<a href="{{ URL::to('/') }}"><i class="fa fa-home"></i> 
-						<span class="title"> Dashboard </span>
-						<span class="label label-default pull-right ">Yönetim</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)"><i class="fa fa-pencil-square-o"></i> 
-						<span class="title"> Posts (Yazılar) </span><i class="icon-arrow"></i> 
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="{{ URL::to('admin/post') }}">
-								<span class="title"> All Posts </span>
-								<span class="label label-default pull-right ">Tüm Yazılar</span>
-							</a>
-						</li>
-						<li>
-							<a href="{{ URL::to('admin/post/create') }}">
-								<span class="title"> Add Post </span>
-								<span class="label label-default pull-right ">Yazı Ekle</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+
+			{{ Menu::get('adminSidebar') }}
 			<!-- end: MAIN NAVIGATION MENU -->
 		</div>
 		<!-- end: SIDEBAR -->

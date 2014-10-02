@@ -126,6 +126,7 @@ return array(
 		//'Frozennode\Administrator\AdministratorServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Former\FormerServiceProvider',
+		'Pingpong\Menus\MenusServiceProvider',
 
 	),
 
@@ -196,6 +197,7 @@ return array(
 		'Timthumb' 		  => 'Spescina\Timthumb\Facades\Timthumb',
 		'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Former' 		  => 'Former\Facades\Former',
+		'Menu'          =>  'Pingpong\Menus\Facades\Menu',
 
 	),
 
