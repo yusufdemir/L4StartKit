@@ -70,9 +70,12 @@
 									  'content' 	=> 'required',
 									  'status'		=> 'required',
 									)); }}
+					<div class="col-sm-12">	
+						{{ Former::actions()->large_primary_submit('Güncelle')->class('pull-right'); }}
+					</div>
 					{{ Former::populate(Post::find($id)); }}
 						@include('admin.posts.post-form')
-					{{ Former::actions()->large_primary_submit('Güncelle'); }}
+
 				    {{ Former::close(); }}
 
 

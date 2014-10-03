@@ -22,7 +22,6 @@
 				</div>
 			</div>
 			<!-- start: MAIN NAVIGATION MENU -->
-
 			{{ Menu::get('adminSidebar') }}
 			<!-- end: MAIN NAVIGATION MENU -->
 		</div>
