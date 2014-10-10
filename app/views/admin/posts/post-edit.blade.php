@@ -64,12 +64,13 @@
                <div class="panel panel-white">
                   <div class="panel-body">
 
-
-					{{ Former::open('/admin/post/'.Input::get('id'))->method('PUT')->rules(array(
+					
+					{{ Former::open('/admin/post/'.$id)->method('PUT')->rules(array(
 									  'title'		=> 'required',
 									  'content' 	=> 'required',
 									  'status'		=> 'required',
 									)); }}
+									
 					<div class="col-sm-12">	
 						{{ Former::actions()->large_primary_submit('Güncelle')->class('pull-right'); }}
 					</div>

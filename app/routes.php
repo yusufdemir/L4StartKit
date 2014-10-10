@@ -29,4 +29,4 @@ Route::get('/', function()
 |-------------
 */
 
-Route::resource('admin/post', 'PostController');
+Route::resource('/admin/post', 'PostController');
